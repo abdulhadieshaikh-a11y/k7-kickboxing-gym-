@@ -1,0 +1,8 @@
+{
+  "name": "k7-kickboxing-gym-website",
+  "private": true,
+  "scripts": {
+    "dev": "node _source/serve.js",
+    "start": "node _source/serve.js"
+  }
+}
