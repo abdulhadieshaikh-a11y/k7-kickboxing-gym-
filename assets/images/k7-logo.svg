@@ -1,7 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="65 230 620 355" role="img" aria-label="K7">
-  <g fill="#fff">
-    <path d="M82 565 244 267l53-15-50 108c77-54 155-93 233-108l179 27-24 45-43-2-70 56c44 4 91 31 130 65-51-19-101-38-152-44l-91 114-78 6c34-55 76-97 122-127-59-8-121-2-180 15-44 33-82 81-111 134Z"/>
-    <path d="m389 331 140 0-56 43-160-9Z"/>
-    <text x="556" y="277" font-family="Arial,sans-serif" font-size="38" font-weight="700">TM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" role="img" aria-label="Rev MMA logo">
+  <defs>
+    <linearGradient id="rm-red" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff5a5a"/>
+      <stop offset="50%" stop-color="#d92222"/>
+      <stop offset="100%" stop-color="#8d0404"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M44 168 150 28l64 0-97 140z" fill="url(#rm-red)"/>
+    <path d="M123 168 266 28l64 0-105 140z" fill="url(#rm-red)"/>
+    <path d="M242 168 404 28l68 0-110 140z" fill="url(#rm-red)"/>
+    <path d="M370 168 538 28l68 0-94 140z" fill="url(#rm-red)"/>
+    <path d="M176 168 216 168 280 74 250 74z" fill="#ffffff" opacity="0.95"/>
+    <path d="M305 168 348 168 414 74 386 74z" fill="#ffffff" opacity="0.95"/>
+    <path d="M448 168 495 168 545 74 520 74z" fill="#ffffff" opacity="0.95"/>
+    <path d="M620 168 674 168 632 28 558 28z" fill="url(#rm-red)"/>
+    <path d="M72 188l580 0" stroke="#ffffff" stroke-width="12" opacity="0.95"/>
   </g>
 </svg>

@@ -68,5 +68,5 @@ server.on('error', error => {
 });
 
 server.listen(port, '127.0.0.1', () => {
-  console.log(`K7 website running at http://localhost:${port}`);
+  console.log(`Rev MMA website running at http://localhost:${port}`);
 });

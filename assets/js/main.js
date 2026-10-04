@@ -1,4 +1,4 @@
-/* K7 KICKBOXING GYM — site script (no dependencies) */
+/* Rev MMA KICKBOXING GYM — site script (no dependencies) */
 (function () {
   "use strict";
 
@@ -10,11 +10,11 @@
      ------------------------------------------------------------------ */
   var CONFIG = {
     FORM_ENDPOINT: "",
-    WHATSAPP_NUMBER: "923482136361", // 0348 2136361 in international format
-    PHONE_DISPLAY: "0348 2136361",
+    WHATSAPP_NUMBER: "923194569163", // 0319 4569163 in international format
+    PHONE_DISPLAY: "0319 4569163",
     TIMEZONE: "Asia/Karachi",
-    OPEN_HOUR: 9,
-    CLOSE_HOUR: 22
+    OPEN_HOUR: 17,
+    CLOSE_HOUR: 23
   };
 
   var doc = document.documentElement;
@@ -148,10 +148,10 @@
     var isSun = n.day === "Sun";
     var open = !isSun && n.h >= CONFIG.OPEN_HOUR && n.h < CONFIG.CLOSE_HOUR;
     var text;
-    if (open) text = "Open now — until 10:00 PM";
-    else if (isSun) text = "Closed today — opens Monday 9:00 AM";
-    else if (n.h < CONFIG.OPEN_HOUR) text = "Closed — opens today 9:00 AM";
-    else text = n.day === "Sat" ? "Closed — opens Monday 9:00 AM" : "Closed — opens tomorrow 9:00 AM";
+    if (open) text = "Open now — until 11:00 PM";
+    else if (isSun) text = "Closed today — opens Monday 5:00 PM";
+    else if (n.h < CONFIG.OPEN_HOUR) text = "Closed — opens today 5:00 PM";
+    else text = n.day === "Sat" ? "Closed — opens Monday 5:00 PM" : "Closed — opens tomorrow 5:00 PM";
     document.querySelectorAll("[data-status]").forEach(function (el) {
       el.classList.toggle("is-open", open);
       var t = el.querySelector("[data-status-text]"); if (t) t.textContent = text;
@@ -215,7 +215,7 @@
     });
 
     function composeText(data) {
-      var lines = ["Hello K7 Kickboxing Gym, I'd like to enquire."];
+      var lines = ["Hello Rev MMA, I'd like to enquire."];
       lines.push("Name: " + data.name);
       if (data.program) lines.push("Program: " + data.program);
       lines.push("Phone: " + data.phone);
